@@ -7,5 +7,5 @@ module.exports = time = (req, res, next) => {
   const min = dateTime.getMinutes()
   const sec = dateTime.getSeconds()
   console.log(`${year}-${month}-${day} ${hour}:${min}:${sec} | ${req.method} from ${req.url}`)
-
+  next()
 }
